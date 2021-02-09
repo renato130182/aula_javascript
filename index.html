@@ -1,11 +1,23 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <title>Minha Primeira pagina com JS</title>
         <meta charset="utf-8" />
         <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <body>
+    <body onload="load()">
         <h1>Minha pagina com JS</h1>
+
+        <button type="button" onclick="clicar()">Clique aqui</button>
+        <p id="agrad"><h3></h3></p>
+        <button type="button" onclick="mudarPagina()">Mudar de tela</button>
+
+        <p id="mouse" onmouseover="mouseAction(this)" onmouseout="voltar(this)">Passe o Mouse...</p>
+
+        <select onchange="optSelect(this)">
+            <option value="1">valor 1</option>
+            <option value="2">valor 2</option>
+            <option value="3">valor 3</option>
+        </select>
     </body>
 </html>

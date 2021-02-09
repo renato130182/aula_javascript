@@ -40,3 +40,41 @@ console.log(d.getTime());
 console.log(d.getDay());
 console.log(d.getHours());
 console.log(d.getMinutes());
+
+function somar(n1, n2) {
+    console.log("Chamou somar")
+    return n1 + n2;
+}
+
+alert(somar(n1, n2));
+
+function clicar() {
+    console.log("Entrou em clicar");
+    alert("Obrigado por clicar");
+    document.getElementById("agrad").innerHTML = "<b>Obrigado por clicar</b>";
+}
+
+function mudarPagina() {
+    window.open("https://web.digitalinnovation.one/home"); // nova aba
+    //outra forma
+    window.location.href = "https://web.digitalinnovation.one/home"; // mesma aba
+}
+
+function mouseAction(elemento) {
+    console.log("mouse action");
+    // document.getElementById("mouse").innerHTML = "Passou o Mouse";
+    elemento.innerHTML = "Passou o Mouse";
+}
+
+function voltar(elemento) {
+    //document.getElementById("mouse").innerHTML = "Passe o Mouse...";
+    elemento.innerHTML = "Passe o Mouse...";
+}
+
+function load() {
+    alert("Carregando...");
+}
+
+function optSelect(elemento) {
+    console.log(elemento.value);
+}
